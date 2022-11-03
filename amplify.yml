@@ -6,6 +6,8 @@ frontend:
         - yarn install
     build:
       commands:
+        - yarn lint
+        - yarn test --watchAll=false
         - yarn run build
   artifacts:
     baseDirectory: build
