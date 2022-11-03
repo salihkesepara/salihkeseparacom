@@ -1,12 +1,11 @@
 function App() {
-  console.log('test')
-
   return (
     <div className="App">
       <header className="App-header">
         <h1>{process.env.REACT_APP_BUILD_ENV}</h1>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit
+          <code>src/App.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
