@@ -6,11 +6,12 @@ frontend:
         - yarn install
     build:
       commands:
+        - yarn test
         - yarn run build
   artifacts:
     baseDirectory: build
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths:
       - node_modules/**/*
