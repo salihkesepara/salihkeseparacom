@@ -6,6 +6,7 @@ frontend:
         - yarn install
     build:
       commands:
+        - REACT_APP_BUILD_ENV=${REACT_APP_BUILD_ENV}
         - yarn lint
         - yarn test --watchAll=false
         - yarn run build
