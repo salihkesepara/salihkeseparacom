@@ -31,7 +31,6 @@
   "main": "index.js",
   "repository": "git@github.com:salihkesepara/salihkeseparacom.git",
   "author": "Salih Kesepara <salihkesepara@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
