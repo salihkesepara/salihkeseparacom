@@ -5,7 +5,7 @@ function App() {
         <h1>{process.env.REACT_APP_BUILD_ENV}</h1>
         <p>
           Edit
-          <code>src/App.tsx</code> and save to reload.
+          <code>src/App.tsx</code> and save to reload!
         </p>
         <a
           className="App-link"
