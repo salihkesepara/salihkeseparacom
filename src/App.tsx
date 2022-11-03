@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
+  console.log('test')
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>{process.env.REACT_APP_BUILD_ENV}</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload. Dev
+          Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -19,7 +18,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
