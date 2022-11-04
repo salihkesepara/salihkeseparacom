@@ -1,0 +1,130 @@
+#terminal {
+  textarea {
+    position: absolute;
+    left: -2000px;
+  }
+
+  #cursor {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 10px;
+    max-width: 10px;
+    height: 1.5em;
+    color: #73abad;
+    font-size: 12px;
+    text-decoration: blink;
+    text-indent: -5px;
+    background-color: #73abad;
+    transform: translateY(4px);
+    animation: blinker 1s linear infinite;
+    opacity: 1;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  #command {
+    height: 50px;
+    color: #73abad;
+    cursor: text;
+  }
+
+  #liner {
+    margin-top: -2px;
+    line-height: 1.3em;
+    animation: show .5s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+  }
+
+  #liner::before {
+    content: "visitor@fkcodes.com:~$ ";
+    color: #519975;
+  }
+
+  #liner.password::before {
+    content: "Password:";
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  p {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    margin: 0;
+    line-height: 1.3em;
+    letter-spacing: .05em;
+    white-space: nowrap;
+    animation: typing .5s steps(30, end);
+  }
+
+  .no-animation {
+    animation: typing 0 steps(30, end);
+  }
+
+  .margin {
+    margin-left: 20px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  .index {
+    color: #dcdccc;
+  }
+
+  .color2 {
+    color: #b89076;
+  }
+
+  .command {
+    color: #73abad;
+    text-shadow: 0 0 5px #73abad;
+  }
+
+  .error {
+    color: #b89076;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .inherit,
+  a {
+    color: #9c8394;
+  }
+
+  a {
+    text-decoration: inherit;
+  }
+
+  a:hover {
+    color: #211830;
+    background: #73abad;
+  }
+
+  a:focus {
+    outline: 0;
+  }
+}

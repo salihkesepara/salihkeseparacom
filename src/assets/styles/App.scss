@@ -1,8 +1,14 @@
 @import url("./index.scss");
+$terminal-background-color: #000;
 
-.Terminal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+body {
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 550px;
+  min-height: 99%;
+  padding: 16px;
+  margin: 0;
+  font-family: cursor, monospace;
+  background: #211d1b;
+  cursor: text;
 }
