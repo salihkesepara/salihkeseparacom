@@ -2,18 +2,12 @@ import 'src/components/Terminal/style.scss'
 import { useEffect } from 'react'
 import Command from 'src/components/Terminal/Command'
 import { addLines } from 'src/components/Terminal/utils'
-
-export interface TerminalProps {
-  commands?: Array<{ name: string, value: any }>
-  onDidMount?: Function
-  onEnter?: Function
-  initialData?: string[]
-}
+import { TerminalProps } from 'src/components/Terminal/dts'
 
 const Terminal = (props: TerminalProps) => {
   const {
     onDidMount = () => {},
-    onEnter = () => { },
+    onEnter = () => {},
     initialData = [],
     commands = []
   } = props

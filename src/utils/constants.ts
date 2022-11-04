@@ -1,30 +1,24 @@
 /* eslint-disable */
 
-// const about: string = 'Salih Kesepara Front-end developer'
-// const summary: string = 'Summary'
-// const projects: string = 'Projects'
-// const socials: any[] = [
-//   { name: 'GitHub', link: 'https://github.com/salihkesepara' },
-//   { name: 'Linkedin', link: 'https://www.linkedin.com/in/salihkesepara' },
-//   { name: 'Twitter', link: 'https://twitter.com/SalihKesepara' },
-//   { name: 'stackoverflow', link: 'https://stackoverflow.com/users/5882263/salih-kesepara' }
-// ]
-
-// export const commands: Array<{ name: string, description?: string }> = [
-//   { name: 'about', description: 'Get more detail about me.' },
-//   { name: 'summary', description: 'Work experiances and technologies.' },
-//   { name: 'projects', description: 'Get all detail about projects.' },
-//   { name: 'socials', description: 'Github, Linkedin, Twitter etc.' }
-// ]
 export const help: Array<string> = [
-  `<span class="command">summary</span><span class="description color2">Work experiances and technologies.</span>`,
-  `<span class="command">about</span><span class="description color2">Get more detail about me.</span>`,
-  `<span class="command">projects</span><span class="description color2">Get all detail about projects.</span>`,
-  `<span class="command">socials</span><span class="description color2">Github, Linkedin, Twitter etc.</span>`
+  `<span class="command">summary</span>            Work experiances and technologies`,
+  `<span class="command">about</span>              Get more detail about me`,
+  `<span class="command">projects</span>           Get all detail about projects`,
+  `<span class="command">socials</span>            Github, Linkedin, Twitter etc`,
+  `<span class="command">clear</span>              Clear the terminal`
 ]
 
-export const commands: Array<{ name: string, value: any }> = [
-  {name: 'help', value: help}
+export const socials: Array<string> = [
+  `<span class="command">gitHub</span>             <a href="https://github.com/salihkesepara" target="_blank">github.com/salihkesepara</a>`,
+  `<span class="command">linkedin</span>           <a href="https://www.linkedin.com/in/salihkesepara" target="_blank">linkedin.com/in/salihkesepara</a>`,
+  `<span class="command">twitter</span>            <a href="https://twitter.com/SalihKesepara" target="_blank">twitter.com/salihkesepara</a>`,
+  `<span class="command">stackoverflow</span>      <a href="https://stackoverflow.com/users/5882263/salih-kesepara" target="_blank">stackoverflow/salihkesepara</a>`
+]
+
+export const commands: Array<{ name: string, value?: any, run?: Function }> = [
+  {name: 'help', value: help},
+  {name: 'socials', value: socials},
+  {name: 'clear'}
 ]
 
 export const banner = [
@@ -41,5 +35,5 @@ export const banner = [
   "      ,;;;;;;;;;;;;;;;;;;;;;;;;,.   ",
   "~~,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
   '<span class="color2">Welcome to my interactive web terminal.</span>',
-  "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
+  "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>"
 ];

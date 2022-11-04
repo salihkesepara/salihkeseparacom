@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react'
-import { addListeners, addLines } from 'src/components/Terminal/utils'
-
-interface CommandProps {
-  onEnter: Function
-  commands: Array<{ name: string, value: any }>
-}
+import { addListeners, addLines, clearBoard, prefix } from 'src/components/Terminal/utils'
+import { CommandProps } from 'src/components/Terminal/dts'
 
 const Command = (props: CommandProps) => {
   const {
@@ -18,10 +14,28 @@ const Command = (props: CommandProps) => {
   }, [])
 
   function handleEnter(value: string) {
-    onEnter(value)
-    const command = commands?.find((command) => command.name === value)
-    addLines({ data: command?.value })
+    handleCommand(value)
     setInputValue('')
+  }
+
+  function handleCommand(value: string) {
+    if (value !== 'clear') {
+      addLines({ data: [`${prefix}<span class="typer">${value}</span>`], style: 'no-animation' })
+    }
+    onEnter(value)
+    const selectedCommand = commands?.find((command: any) => command.name === value)
+
+    switch (selectedCommand?.name) {
+      case 'clear':
+        clearBoard()
+        break
+
+      default:
+        typeof selectedCommand === 'undefined'
+          ? addLines({ data: [`${prefix}<span class="error">command not found</span>`] })
+          : addLines({ data: selectedCommand?.value })
+        break
+    }
   }
 
   return (

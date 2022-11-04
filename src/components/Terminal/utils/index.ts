@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 interface addLineParams {
   text: string
   style?: string
@@ -21,11 +23,9 @@ export function addLine(params: addLineParams) {
     }
   }
   setTimeout(() => {
-    const next = document.createElement('p')
+    const next = document.createElement('div')
     next.innerHTML = t
-    next.className = style
-
-    // boardHTML.parentNode.insertBefore(next, boardHTML)
+    next.className = `line ${style}`
     boardHTML?.appendChild(next)
 
     window.scrollTo(0, document.body.offsetHeight)
@@ -69,3 +69,9 @@ function focusInput() {
   const input: any = getInputHTML()
   input.focus()
 }
+
+export function clearBoard() {
+  $('#board').html('')
+}
+
+export const prefix = 'visitor@fkcodes.com:~$ '
