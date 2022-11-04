@@ -4,8 +4,7 @@ const Home = () => {
   const commands: object = {
     'open-google': () => window.open('https://www.google.com/', '_blank'),
     showmsg: () => 'Hello World',
-    popup: () => console.log('Terminal in React'),
-    test: () => console.log('asdfd')
+    test: (print: any) => print('asdfd')
   }
 
   return (
