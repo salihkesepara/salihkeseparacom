@@ -1,27 +1,34 @@
 import 'src/components/Terminal/style.scss'
+import { createContext, useEffect, useState, useContext } from 'react'
 import { TerminalProps } from 'src/components/Terminal/dts/terminalParams'
-import { useEffect } from 'react'
 import Board from 'src/components/Terminal/Board'
 import Command from 'src/components/Terminal/Command'
 
+// @ts-expect-error
+const TerminalContext = createContext()
+
 const Terminal = (props: TerminalProps) => {
   const {
-    // commands,
+    commands,
     onDidMount
   } = props
+  const [state, setState] = useState({ commands })
 
   useEffect(() => {
     onDidMount()
   }, [])
 
-  /* ----------------------------- event listeners ---------------------------- */
-
   return (
-    <div id="terminal">
+    <TerminalContext.Provider value={{ state, setState }}>
       <Board />
       <Command />
-    </div>
+    </TerminalContext.Provider>
   )
 }
 
 export default Terminal
+
+export {
+  TerminalContext,
+  useContext
+}

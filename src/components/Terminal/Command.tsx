@@ -1,41 +1,21 @@
 import { useEffect, useState } from 'react'
+import { addListeners } from 'src/utils'
 
 const Command = () => {
-  const [inputValue, setInputValue] = useState('')
-
-  const getInputHTML = () => {
-    return document.getElementById('text-area')
-  }
-
-  const focusInput = () => {
-    const input: any = getInputHTML()
-    input.focus()
-  }
+  const [inputValue, setInputValue] = useState<any>('')
 
   useEffect(() => {
-    focusInput()
-    const input = getInputHTML()
-    input?.addEventListener('keypress', (event) => {
-      if (event.key === 'Enter') {
-        event.preventDefault()
-        setInputValue('')
-      }
+    addListeners({
+      onEnter: (value: string) => console.log('value', value)
     })
   }, [])
 
-  window.addEventListener('click', focusInput)
-
-  const handleInputChange = (event: any) => {
-    setInputValue(event?.target?.value)
-  }
-
   return (
-    <div id="command">
+    <div id="command-page">
       <textarea
         id="text-area"
         className="text-area"
-        onChange={handleInputChange}
-        value={inputValue}>
+        onChange={(event) => setInputValue(event.target.value)}>
       </textarea>
       <div id="liner">
         <span id="typer">{inputValue}</span>

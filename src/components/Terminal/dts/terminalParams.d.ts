@@ -1,4 +1,4 @@
 export interface TerminalProps {
-  commands?: Array<{ name: string, description?: string }>
+  commands?: string[]
   onDidMount?: function
 }

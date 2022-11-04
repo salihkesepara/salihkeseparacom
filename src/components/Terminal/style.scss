@@ -1,4 +1,60 @@
-#terminal {
+#board {
+  .color2 {
+    color: #b89076;
+  }
+
+  p {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    margin: 0;
+    line-height: 1.3em;
+    letter-spacing: .05em;
+    white-space: nowrap;
+    animation: typing .5s steps(30, end);
+  }
+
+  .error {
+    color: #b89076;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .inherit,
+  a {
+    color: #9c8394;
+  }
+
+  a {
+    text-decoration: inherit;
+  }
+
+  a:hover {
+    color: #211830;
+    background: #73abad;
+  }
+
+  a:focus {
+    outline: 0;
+  }
+
+  .index {
+    color: #dcdccc;
+  }
+
+  .command {
+    color: #73abad;
+    text-shadow: 0 0 5px #73abad;
+  }
+
+  .description {
+    margin-left: 100px;
+  }
+}
+
+#command-page {
   textarea {
     position: absolute;
     left: -2000px;
@@ -39,6 +95,11 @@
     animation: show .5s ease forwards;
     animation-delay: 1.2s;
     opacity: 0;
+
+    #typer {
+      color: #73abad;
+      ;
+    }
   }
 
   #liner::before {
@@ -60,17 +121,6 @@
     }
   }
 
-  p {
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    margin: 0;
-    line-height: 1.3em;
-    letter-spacing: .05em;
-    white-space: nowrap;
-    animation: typing .5s steps(30, end);
-  }
-
   .no-animation {
     animation: typing 0 steps(30, end);
   }
@@ -87,44 +137,5 @@
     to {
       width: 100%;
     }
-  }
-
-  .index {
-    color: #dcdccc;
-  }
-
-  .color2 {
-    color: #b89076;
-  }
-
-  .command {
-    color: #73abad;
-    text-shadow: 0 0 5px #73abad;
-  }
-
-  .error {
-    color: #b89076;
-  }
-
-  .white {
-    color: #fff;
-  }
-
-  .inherit,
-  a {
-    color: #9c8394;
-  }
-
-  a {
-    text-decoration: inherit;
-  }
-
-  a:hover {
-    color: #211830;
-    background: #73abad;
-  }
-
-  a:focus {
-    outline: 0;
   }
 }
