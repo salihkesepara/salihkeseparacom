@@ -1,23 +1,11 @@
-import Terminal, { addLine, loopLines } from 'src/components/Terminal'
+import Terminal from 'src/components/Terminal'
 import { commands, banner } from 'src/utils/constants'
 
 const Home = () => {
-  const handleTerminalDidMount = () => {
-    loopLines({
-      data: banner,
-      time: 100
-    })
-  }
-  const handleEnter = (value: any) => {
-    console.log('value: ', value)
-    addLine({ text: 'test' })
-  }
-
   return (
     <Terminal
+      initialData={banner}
       commands={commands}
-      onEnter={handleEnter}
-      onDidMount={handleTerminalDidMount}
     />
   )
 }

@@ -1,42 +1,39 @@
 import 'src/components/Terminal/style.scss'
-import { createContext, useEffect, useState, useContext } from 'react'
+import { useEffect } from 'react'
 import Command from 'src/components/Terminal/Command'
-import { addLine, loopLines } from 'src/components/Terminal/utils'
-
-// @ts-expect-error
-const TerminalContext = createContext()
+import { addLines } from 'src/components/Terminal/utils'
 
 export interface TerminalProps {
-  commands: string[]
-  onDidMount: Function
-  onEnter: Function
+  commands?: Array<{ name: string, value: any }>
+  onDidMount?: Function
+  onEnter?: Function
+  initialData?: string[]
 }
 
 const Terminal = (props: TerminalProps) => {
   const {
-    commands = [],
     onDidMount = () => {},
-    onEnter = () => {}
+    onEnter = () => { },
+    initialData = [],
+    commands = []
   } = props
-  const [state, setState] = useState({ commands })
 
   useEffect(() => {
     onDidMount()
+    addLines({ data: initialData, time: 100 })
   }, [])
 
   return (
-    <TerminalContext.Provider value={{ state, setState }}>
+    <div id="terminal">
       <div id="board" />
-      <Command onEnter={onEnter} />
-    </TerminalContext.Provider>
+      <Command
+        onEnter={onEnter}
+        commands={commands}
+      />
+    </div>
   )
 }
 
 export default Terminal
 
-export {
-  TerminalContext,
-  useContext,
-  addLine,
-  loopLines
-}
+export { addLines }

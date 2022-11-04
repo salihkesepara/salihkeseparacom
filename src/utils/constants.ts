@@ -16,11 +16,15 @@
 //   { name: 'projects', description: 'Get all detail about projects.' },
 //   { name: 'socials', description: 'Github, Linkedin, Twitter etc.' }
 // ]
-export const commands: Array<string> = [
+export const help: Array<string> = [
   `<span class="command">summary</span><span class="description color2">Work experiances and technologies.</span>`,
   `<span class="command">about</span><span class="description color2">Get more detail about me.</span>`,
-  `<span class="command">summary</span><span class="description color2">Get all detail about projects.</span>`,
-  `<span class="command">summary</span><span class="description color2">Github, Linkedin, Twitter etc.</span>`
+  `<span class="command">projects</span><span class="description color2">Get all detail about projects.</span>`,
+  `<span class="command">socials</span><span class="description color2">Github, Linkedin, Twitter etc.</span>`
+]
+
+export const commands: Array<{ name: string, value: any }> = [
+  {name: 'help', value: help}
 ]
 
 export const banner = [

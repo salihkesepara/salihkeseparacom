@@ -9,7 +9,7 @@ interface addListenersParams {
 }
 
 export function addLine(params: addLineParams) {
-  const { text, style = '', time = 0 } = params
+  const { text, style = '', time = 100 } = params
   const boardHTML = document.getElementById('board')
   let t = ''
   for (let i = 0; i < text.length; i++) {
@@ -38,10 +38,9 @@ interface loopLinesParams {
   time?: number
 }
 
-export function loopLines(params: loopLinesParams) {
-  const { data, style = '', time = 0 } = params
-  data.forEach((item, index) => {
-    // addLine(item, style, index * time)
+export function addLines(params: loopLinesParams) {
+  const { data, style = '', time = 100 } = params
+  data?.forEach((item, index) => {
     addLine({
       text: item,
       style,
