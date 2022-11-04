@@ -1,22 +1,16 @@
 #terminal {
   #board {
-    min-width: 1200px;
-
-    .line {
-      margin-top: 3px;
-    }
-
     .color2 {
       color: #b89076;
     }
 
-    .line {
+    p {
       display: block;
       overflow: hidden;
       margin: 0;
       margin: 0;
       line-height: 1.3em;
-      letter-spacing: .05em;
+      white-space: nowrap;
       white-space: nowrap;
       animation: typing .5s steps(30, end);
     }
@@ -101,7 +95,6 @@
 
     #liner {
       margin-top: -2px;
-      line-height: 1.3em;
       animation: show .5s ease forwards;
       animation-delay: 1.2s;
       opacity: 0;

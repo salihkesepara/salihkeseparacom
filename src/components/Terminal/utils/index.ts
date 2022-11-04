@@ -23,11 +23,11 @@ export function addLine(params: addLineParams) {
     }
   }
   setTimeout(() => {
-    const next = document.createElement('div')
+    const next = document.createElement('p')
     next.innerHTML = t
-    next.className = `line ${style}`
+    next.className = style
+    // boardHTML.parentNode.insertBefore(next, boardHTML)
     boardHTML?.appendChild(next)
-
     window.scrollTo(0, document.body.offsetHeight)
   }, time)
 }
