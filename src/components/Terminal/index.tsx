@@ -1,16 +1,22 @@
 import 'src/components/Terminal/style.scss'
 import { createContext, useEffect, useState, useContext } from 'react'
-import { TerminalProps } from 'src/components/Terminal/dts/terminalParams'
-import Board from 'src/components/Terminal/Board'
 import Command from 'src/components/Terminal/Command'
+import { addLine, loopLines } from 'src/components/Terminal/utils'
 
 // @ts-expect-error
 const TerminalContext = createContext()
 
+export interface TerminalProps {
+  commands: string[]
+  onDidMount: Function
+  onEnter: Function
+}
+
 const Terminal = (props: TerminalProps) => {
   const {
-    commands,
-    onDidMount
+    commands = [],
+    onDidMount = () => {},
+    onEnter = () => {}
   } = props
   const [state, setState] = useState({ commands })
 
@@ -20,8 +26,8 @@ const Terminal = (props: TerminalProps) => {
 
   return (
     <TerminalContext.Provider value={{ state, setState }}>
-      <Board />
-      <Command />
+      <div id="board" />
+      <Command onEnter={onEnter} />
     </TerminalContext.Provider>
   )
 }
@@ -30,5 +36,7 @@ export default Terminal
 
 export {
   TerminalContext,
-  useContext
+  useContext,
+  addLine,
+  loopLines
 }

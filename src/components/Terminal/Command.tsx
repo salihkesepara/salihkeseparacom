@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
-import { addListeners } from 'src/utils'
+import { addListeners } from 'src/components/Terminal/utils'
 
-const Command = () => {
+interface CommandProps {
+  onEnter: Function
+}
+
+const Command = (props: CommandProps) => {
+  const { onEnter = () => {} } = props
   const [inputValue, setInputValue] = useState<any>('')
 
   useEffect(() => {
-    addListeners({
-      onEnter: (value: string) => console.log('value', value)
-    })
+    addListeners({ onEnter })
   }, [])
 
   return (
