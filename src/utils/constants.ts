@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 export const banner = [
-  '<span class="index">ForrestKnight (FK) Not A Corporation. All knights reserved.</span>',
+  '<span class="index">Welcome The Personal Web Site CLI Tool.</span>',
   "         ___   ____",
   "       /' --;^/ ,-_\\     \\ | /       ",
   "      / / --o\\ o-\\ \\\\   --(_)--   ",
@@ -16,6 +16,16 @@ export const banner = [
   '<span class="color2">Welcome to my interactive web terminal.</span>',
   "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>"
 ];
+
+export const banner2 = [
+'<span class="index">Welcome The Personal Web Site CLI Tool.</span>',
+"<span class=\"color2\">Type <span class=\"command\">'help'</span> to see all available commands.</span>"
+]
+
+
+
+
+
 
 export const help: Array<string> = [
   `<span class="command">summary</span>            Work experiances and technologies`,
