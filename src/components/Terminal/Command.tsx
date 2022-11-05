@@ -32,7 +32,10 @@ const Command = (props: CommandProps) => {
 
       default:
         typeof selectedCommand === 'undefined'
-          ? addLines({ data: [`${prefix}<span class="error">command not found</span>`], style: 'no-animation' })
+          ? addLines({
+            data: [`<span class="error">-bash: ${value}: not found</span>`],
+            style: 'no-animation'
+          })
           : addLines({ data: selectedCommand?.value })
         break
     }
