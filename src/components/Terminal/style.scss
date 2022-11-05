@@ -1,9 +1,5 @@
 #terminal {
   #board {
-    .color2 {
-      color: #b89076;
-    }
-
     p {
       display: block;
       overflow: hidden;
@@ -40,15 +36,6 @@
 
     a:focus {
       outline: 0;
-    }
-
-    .index {
-      color: #dcdccc;
-    }
-
-    .command {
-      color: #73abad;
-      text-shadow: 0 0 5px #73abad;
     }
 
     .description {
