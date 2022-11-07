@@ -74,4 +74,4 @@ export function clearBoard() {
   $('#board').html('')
 }
 
-export const prefix = 'visitor@fkcodes.com:~$ '
+export const prefix = 'temp@linux-desktop:~$ '
