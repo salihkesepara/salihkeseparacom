@@ -25,22 +25,6 @@ const Command = (props: CommandProps) => {
     }
   }
 
-  const addCommandToBoard = (inputCommand: string) => {
-    const command = (key: string) => {
-      return (
-        <div key={key}>
-          <span className="code-color">
-            {prefix}
-          </span>
-          <span className="typer">
-            {inputCommand}
-          </span>
-        </div>
-      )
-    }
-    addLine(command)
-  }
-
   const handleCommandUndefined = (command: string) => {
     const commandNotFound = (key: string) => {
       return (
@@ -61,8 +45,20 @@ const Command = (props: CommandProps) => {
     } else if (selectedCommand.name === 'clear') {
       setLineList([])
     } else {
-      addCommandToBoard(inputCommand)
-      setLineList([...lineList, selectedCommand.value])
+      const styledInputCommand = (key: string) => {
+        return (
+          <div key={key}>
+            <span className="code-color">
+              {prefix}
+            </span>
+            <span className="typer">
+              {inputCommand}
+            </span>
+          </div>
+        )
+      }
+
+      setLineList([...lineList, styledInputCommand, selectedCommand.value])
     }
   }
 

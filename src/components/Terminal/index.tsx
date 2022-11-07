@@ -5,17 +5,17 @@ import { TerminalProps } from 'src/components/Terminal/dts'
 import Board from 'src/components/Terminal/Board'
 
 const Terminal = (props: TerminalProps) => {
-  const [lineList, setLineList] = useState([])
+  const [lineList, setLineList] = useState([() => {}])
   const {
     onDidMount = () => {},
     onEnter = () => {},
-    // initialData = [],
+    initialData = () => {},
     commands = []
   } = props
 
   useEffect(() => {
     onDidMount()
-    // addLines({ data: initialData, time: 100 })
+    setLineList([initialData])
   }, [])
 
   return (
