@@ -19,50 +19,56 @@ const Command = (props: CommandProps) => {
     addListeners()
   }, [])
 
-  function handleEnter(value: string) {
-    handleCommand(value)
-    setInputValue('')
-  }
-
-  function handleOnkeydown(event: any) {
+  const handleOnkeydown = (event: any) => {
     if (event.key === 'Enter') {
       handleEnter(event.target.value)
     }
   }
 
-  function handleCommand(value: string) {
-    // <span class="code-color">${prefix}</span><span class="typer">${value}</span>
-    if (value !== 'clear') {
-      const addCodeToBoard = (key: string) => {
-        return (
-          <div key={key}>
-            <span className="code-color">
-              {prefix}
-            </span>
-            <span className="typer">
-              {value}
-            </span>
-          </div>
-        )
-      }
-      addLine(addCodeToBoard)
+  const addCommandToBoard = (inputCommand: string) => {
+    const command = (key: string) => {
+      return (
+        <div key={key}>
+          <span className="code-color">
+            {prefix}
+          </span>
+          <span className="typer">
+            {inputCommand}
+          </span>
+        </div>
+      )
     }
-    onEnter(value)
-    const selectedCommand = commands?.find((command: any) => command.name === value)
+    addLine(command)
+  }
 
-    console.log('selectedCommand: ', selectedCommand)
+  const handleCommandUndefined = (command: string) => {
+    const commandNotFound = (key: string) => {
+      return (
+        <p key={key}
+          className="error">-bash: {command}: not found
+        </p>
+      )
+    }
+    addLine(commandNotFound)
+  }
+
+  function handleCommand(inputCommand: string) {
+    onEnter(inputCommand)
+    const selectedCommand = commands?.find((command: any) => command.name === inputCommand)
 
     if (typeof selectedCommand === 'undefined') {
-      const commandNotFound = (key: string) => {
-        return (
-          <p key={key}
-            className="error">-bash: {value}: not found</p>
-        )
-      }
-      addLine(commandNotFound)
-    } else if (selectedCommand?.name === 'clear') {
+      handleCommandUndefined(inputCommand)
+    } else if (selectedCommand.name === 'clear') {
       setLineList([])
+    } else {
+      addCommandToBoard(inputCommand)
+      setLineList([...lineList, selectedCommand.value])
     }
+  }
+
+  const handleEnter = (inputCommand: string) => {
+    handleCommand(inputCommand)
+    setInputValue('')
   }
 
   return (

@@ -1,7 +1,6 @@
 import 'src/components/Terminal/style.scss'
 import { useEffect, useState } from 'react'
 import Command from 'src/components/Terminal/Command'
-// import { addLines } from 'src/components/Terminal/utils'
 import { TerminalProps } from 'src/components/Terminal/dts'
 import Board from 'src/components/Terminal/Board'
 
@@ -21,7 +20,6 @@ const Terminal = (props: TerminalProps) => {
 
   return (
     <div id="terminal">
-      {/* <div id="board" /> */}
       <Board lineList={lineList} />
       <Command
         lineList={lineList}
