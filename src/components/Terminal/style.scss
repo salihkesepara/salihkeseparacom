@@ -53,8 +53,8 @@
     }
   }
 
-  #command-page {
-    textarea {
+  #command {
+    input {
       position: absolute;
       left: -2000px;
     }
@@ -72,7 +72,7 @@
       text-indent: -5px;
       background-color: #73abad;
       transform: translateY(4px);
-      // animation: blinker 1s linear infinite;
+      animation: blinker 1s linear infinite;
       opacity: 1;
     }
 
