@@ -11,7 +11,7 @@ interface addListenersParams {
 }
 
 export function addLine(params: addLineParams) {
-  const { text, style = '', time = 100 } = params
+  const { text, style = '' } = params
   const boardHTML = document.getElementById('board')
   let t = ''
   for (let i = 0; i < text.length; i++) {
@@ -22,14 +22,14 @@ export function addLine(params: addLineParams) {
       t += text.charAt(i)
     }
   }
-  setTimeout(() => {
-    const next = document.createElement('p')
-    next.innerHTML = t
-    next.className = style
-    // boardHTML.parentNode.insertBefore(next, boardHTML)
-    boardHTML?.appendChild(next)
-    window.scrollTo(0, document.body.offsetHeight)
-  }, time)
+  // setTimeout(() => {
+  const next = document.createElement('p')
+  next.innerHTML = t
+  next.className = style
+  // boardHTML.parentNode.insertBefore(next, boardHTML)
+  boardHTML?.appendChild(next)
+  window.scrollTo(0, document.body.offsetHeight)
+  // }, time)
 }
 
 interface loopLinesParams {

@@ -20,7 +20,7 @@ const Command = (props: CommandProps) => {
 
   function handleCommand(value: string) {
     if (value !== 'clear') {
-      addLines({ data: [`${prefix}<span class="typer">${value}</span>`], style: 'no-animation' })
+      addLines({ data: [`<span class="code-color">${prefix}</span><span class="typer">${value}</span>`] })
     }
     onEnter(value)
     const selectedCommand = commands?.find((command: any) => command.name === value)
@@ -33,8 +33,7 @@ const Command = (props: CommandProps) => {
       default:
         typeof selectedCommand === 'undefined'
           ? addLines({
-            data: [`<span class="error">-bash: ${value}: not found</span>`],
-            style: 'no-animation'
+            data: [`<span class="error">-bash: ${value}: not found</span>`]
           })
           : addLines({ data: selectedCommand?.value })
         break

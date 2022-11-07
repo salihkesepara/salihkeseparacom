@@ -4,15 +4,13 @@
       display: block;
       overflow: hidden;
       margin: 0;
-      margin: 0;
       line-height: 1.3em;
-      white-space: nowrap;
-      white-space: nowrap;
-      animation: typing .5s steps(30, end);
+      // white-space: nowrap;
+      // animation: typing .5s steps(30, end);
     }
 
     .error {
-      color: #934554;
+      color: #a75564;
     }
 
     .white {
@@ -49,6 +47,10 @@
     .typer {
       color: #73abad;
     }
+
+    .code-color {
+      color: #519975;
+    }
   }
 
   #command-page {
@@ -70,7 +72,7 @@
       text-indent: -5px;
       background-color: #73abad;
       transform: translateY(4px);
-      animation: blinker 1s linear infinite;
+      // animation: blinker 1s linear infinite;
       opacity: 1;
     }
 
@@ -82,9 +84,9 @@
 
     #liner {
       margin-top: -2px;
-      animation: typing .5s ease forwards;
-      animation-delay: 1.2s;
-      opacity: 0;
+      // animation: typing .5s ease forwards;
+      // animation-delay: 1.2s;
+      // opacity: 0;
 
       #typer {
         color: #73abad;
@@ -94,10 +96,6 @@
     #liner::before {
       content: "temp@linux-desktop:~$ ";
       color: #519975;
-    }
-
-    #liner.password::before {
-      content: "Password:";
     }
 
     .margin {

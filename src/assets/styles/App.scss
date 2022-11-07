@@ -3,12 +3,11 @@ $terminal-background-color: #000;
 
 body {
   overflow-x: hidden;
-  width: 100%;
-  min-width: 550px;
+  min-width: 350px;
   min-height: 99%;
   padding: 16px;
   margin: 0;
-  color: #519975;
+  color: #b89076;
   font-family: cursor, monospace;
   background: #211d1b;
   cursor: text;
@@ -20,10 +19,10 @@ body {
 }
 
 .index {
-  color: #dcdccc;
+  color: #b7b7b7;
 }
 
-.color2 {
+.text-color {
   color: #b89076;
 }
 
@@ -33,4 +32,8 @@ body {
 
 .banner {
   color: #dcdccc;
+}
+
+.experiance {
+  min-width: 877px;
 }
