@@ -26,14 +26,31 @@ body {
   color: #b89076;
 }
 
-.banner-style {
-  font-size: 10px;
-}
-
-.banner {
-  color: #dcdccc;
-}
-
 .experiance {
   min-width: 877px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.column-100 {
+  min-width: 100px;
+}
+.column-200 {
+  min-width: 200px;
+}
+.column-300 {
+  min-width: 300px;
+}
+.column-400 {
+  min-width: 400px;
+}
+.column-500 {
+  min-width: 500px;
+}
+.column-600 {
+  min-width: 600px;
 }

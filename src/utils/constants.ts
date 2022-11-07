@@ -34,7 +34,8 @@ export const summary: Array<string> = [
 ]
 
 export const experiance: Array<string> = [
-  `Huawei                Team Lead                Jun 2021 - Present  (1 year 6 months +)`,
+  `<div class="container"><div class="column-200">Huawei</div><div class="column-300">Team Lead</div><div class="column-400">Jun 2021 - Present  (1 year 6 months +)</div></div>`,
+  `<div class="container"><div class="column-200">BilgeAdam</div><div class="column-300">Front-end Developer</div><div class="column-400">Jun 2020 - Jun 2021 (1 year 1 month)</div></div>`,
   `BilgeAdam             Front-end Developer      Jun 2020 - Jun 2021 (1 year 1 month)`,
   `Ziraat Technology     Front-end Developer      Jul 2016 - Sep 2019 (3 years 3 months)`,
   `Ciceksepeti.com       Front-end Developer      Nov 2015 - May 2016 (7 months)`,
