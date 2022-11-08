@@ -7,7 +7,7 @@ const Home = () => {
     { name: 'summary', value: template.summary },
     { name: 'experiance', value: template.experiance },
     { name: 'education', value: template.education },
-    { name: 'project', value: '' },
+    { name: 'project', value: template.project },
     { name: 'language', value: '' },
     { name: 'social', value: '' },
     { name: 'help', value: '' },

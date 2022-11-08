@@ -37,6 +37,8 @@ const experiance = (key: string) => {
         <div className="column-400">Total: More then 10 years</div>
       </div>
       <div className="row">
+        <div className="column-200"></div>
+        <div className="column-300"></div>
         <div className="column-200">
           <a href="https://www.linkedin.com/in/salihkesepara/details/experience/"
             target="_blank">See all...
