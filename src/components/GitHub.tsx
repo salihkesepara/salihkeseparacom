@@ -1,8 +1,10 @@
 import gitHubLogo from 'src/assets/images/github.png'
 
 const GitHub = () => {
+  const githubRepoLink = 'https://github.com/salihkesepara/terminal.io'
+
   return (
-    <a href="https://github.com/salihkesepara/salihkeseparacom"
+    <a href={githubRepoLink}
       target="_blank"
       id="github">
       <img src={gitHubLogo}

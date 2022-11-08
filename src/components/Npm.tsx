@@ -1,8 +1,9 @@
 import npm from 'src/assets/images/npm.svg'
 
 const Npm = () => {
+  const npmLink = 'https://www.npmjs.com/package/terminal-io'
   return (
-    <a href="https://github.com/salihkesepara/salihkeseparacom"
+    <a href={npmLink}
       target="_blank"
       id="npm">
       <div className="img-box">
