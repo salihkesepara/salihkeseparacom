@@ -2,6 +2,7 @@ import Terminal from 'src/components/Terminal'
 import template from 'src/template'
 import VersionSticker from 'src/components/VersionSticker'
 import GitHub from 'src/components/GitHub'
+import Npm from 'src/components/Npm'
 
 const Home = () => {
   const commands: Array<{ name: string, value?: any }> = [
@@ -26,6 +27,7 @@ const Home = () => {
         className="custom-terminal"
       />
       <VersionSticker />
+      <Npm />
       <GitHub />
     </>
   )

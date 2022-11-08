@@ -98,7 +98,8 @@ body {
   }
 }
 
-#github {
+#github,
+#npm {
   position: fixed;
   right: 16px;
   bottom: 16px;
@@ -128,27 +129,43 @@ body {
   }
 }
 
-#github:hover {
-  bottom: 20px;
+#github:hover,
+#npm:hover {
   background-color: #272727;
   animation: github-hover-on-animation .2s;
 }
 
 @keyframes github-hover-on-animation {
   from {
-    bottom: 16px;
     background: #212121;
   }
 
   to {
-    bottom: 20px;
     background-color: #272727;
   }
 }
 
 @media only screen and (max-width: $phones) {
   #github,
-  #version-sticker {
+  #version-sticker,
+  #npm {
     display: none;
+  }
+}
+
+#npm {
+  bottom: 110px;
+  background: #212121;
+
+  .img-box {
+    padding: 7px 7px 4px 7px;
+    margin-bottom: 7px;
+    background-color: #d0cece;
+    border-radius: 26px;
+  }
+
+  img {
+    width: 18px;
+    margin-bottom: 0;
   }
 }

@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const gitHubLogo = require('src/assets/images/github.png')
+import gitHubLogo from 'src/assets/images/github.png'
 
 const GitHub = () => {
   return (
