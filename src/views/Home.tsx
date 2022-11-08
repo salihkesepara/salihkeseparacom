@@ -12,7 +12,7 @@ const Home = () => {
     { name: 'social', value: template.social },
     { name: 'help', value: template.help },
     { name: '-h', value: template.help },
-    { name: 'contact', value: '' },
+    { name: 'contact', value: template.contact },
     { name: 'clear' }
   ]
 

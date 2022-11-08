@@ -7,6 +7,7 @@ import project from 'src/template/project'
 import language from 'src/template/language'
 import social from 'src/template/social'
 import help from 'src/template/help'
+import contact from 'src/template/contact'
 
 export default {
   banner,
@@ -17,5 +18,6 @@ export default {
   project,
   language,
   social,
-  help
+  help,
+  contact
 }
