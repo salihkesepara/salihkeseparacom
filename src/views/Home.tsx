@@ -20,6 +20,7 @@ const Home = () => {
     <Terminal
       initialData={template.banner}
       commands={commands}
+      className="custom-terminal"
     />
   )
 }

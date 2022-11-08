@@ -54,3 +54,9 @@ body {
 .column-600 {
   min-width: 600px;
 }
+
+.custom-terminal {
+  .error {
+    color: blue;
+  }
+}

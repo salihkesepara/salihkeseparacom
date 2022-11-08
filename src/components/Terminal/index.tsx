@@ -10,7 +10,8 @@ const Terminal = (props: TerminalProps) => {
     onDidMount = () => {},
     onEnter = () => {},
     initialData = () => {},
-    commands = []
+    commands = [],
+    className = ''
   } = props
 
   useEffect(() => {
@@ -19,7 +20,8 @@ const Terminal = (props: TerminalProps) => {
   }, [])
 
   return (
-    <div id="terminal">
+    <div id="terminal"
+      className={className}>
       <Board lineList={lineList} />
       <Command
         lineList={lineList}
