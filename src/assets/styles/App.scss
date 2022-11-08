@@ -1,5 +1,6 @@
 @import url("./index.scss");
 $terminal-background-color: #000;
+$phones: 600px;
 
 body {
   overflow-x: hidden;
@@ -81,7 +82,7 @@ body {
 }
 
 #version-sticker:hover {
-  animation-duration: .3s;
+  animation-duration: .2s;
   animation-name: opacity-animation;
   cursor: default;
   opacity: .2;
@@ -94,5 +95,60 @@ body {
 
   to {
     opacity: .2;
+  }
+}
+
+#github {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 13px;
+  text-decoration: none;
+  background: #212121;
+  box-shadow: -3px 3px 7px #030202;
+  border: 1px dashed #938d8d;
+  border-radius: 23px;
+  cursor: pointer;
+
+  img {
+    width: 32px;
+    margin-bottom: 8px;
+    opacity: .8;
+  }
+
+  span {
+    color: #b7b7b7;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+#github:hover {
+  bottom: 20px;
+  background-color: #272727;
+  animation: github-hover-on-animation .2s;
+}
+
+@keyframes github-hover-on-animation {
+  from {
+    bottom: 16px;
+    background: #212121;
+  }
+
+  to {
+    bottom: 20px;
+    background-color: #272727;
+  }
+}
+
+@media only screen and (max-width: $phones) {
+  #github,
+  #version-sticker {
+    display: none;
   }
 }
