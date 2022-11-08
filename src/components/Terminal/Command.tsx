@@ -63,7 +63,7 @@ const Command = (props: CommandProps) => {
   }
 
   const handleEnter = (inputCommand: string) => {
-    handleCommand(inputCommand)
+    handleCommand(inputCommand.toLowerCase())
     setInputValue('')
   }
 
