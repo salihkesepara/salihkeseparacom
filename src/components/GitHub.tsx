@@ -1,7 +1,7 @@
 import gitHubLogo from 'src/assets/images/github.png'
 
 const GitHub = () => {
-  const githubRepoLink = 'https://github.com/salihkesepara/terminal.io'
+  const githubRepoLink = 'https://github.com/salihkesepara/salihkeseparacom'
 
   return (
     <a href={githubRepoLink}
