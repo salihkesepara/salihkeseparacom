@@ -6,6 +6,7 @@ import education from 'src/template/education'
 import project from 'src/template/project'
 import language from 'src/template/language'
 import social from 'src/template/social'
+import help from 'src/template/help'
 
 export default {
   banner,
@@ -15,5 +16,6 @@ export default {
   education,
   project,
   language,
-  social
+  social,
+  help
 }

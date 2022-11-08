@@ -10,8 +10,8 @@ const Home = () => {
     { name: 'project', value: template.project },
     { name: 'language', value: template.language },
     { name: 'social', value: template.social },
-    { name: 'help', value: '' },
-    { name: '-h', value: '' },
+    { name: 'help', value: template.help },
+    { name: '-h', value: template.help },
     { name: 'contact', value: '' },
     { name: 'clear' }
   ]
