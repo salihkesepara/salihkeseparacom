@@ -60,3 +60,39 @@ body {
     color: blue;
   }
 }
+
+#version-sticker {
+  position: absolute;
+  top: 48px;
+  right: -47px;
+  width: 220px;
+  padding: 2px;
+  text-align: center;
+  background: #d1d1d1;
+  box-shadow: 3px 5px 7px #000;
+  border: 2px solid;
+  transform: rotate(45deg);
+
+  .container {
+    padding: 5px;
+    font-weight: bold;
+    border: dashed 2px;
+  }
+}
+
+#version-sticker:hover {
+  animation-duration: .3s;
+  animation-name: opacity-animation;
+  cursor: default;
+  opacity: .2;
+}
+
+@keyframes opacity-animation {
+  from {
+    opacity: .8;
+  }
+
+  to {
+    opacity: .2;
+  }
+}

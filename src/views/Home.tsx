@@ -1,5 +1,6 @@
 import Terminal from 'src/components/Terminal'
 import template from 'src/template'
+import VersionSticker from 'src/components/VersionSticker'
 
 const Home = () => {
   const commands: Array<{ name: string, value?: any }> = [
@@ -17,11 +18,14 @@ const Home = () => {
   ]
 
   return (
-    <Terminal
-      initialData={template.banner}
-      commands={commands}
-      className="custom-terminal"
-    />
+    <>
+      <Terminal
+        initialData={template.banner}
+        commands={commands}
+        className="custom-terminal"
+      />
+      <VersionSticker />
+    </>
   )
 }
 
