@@ -9,7 +9,7 @@ const Home = () => {
     { name: 'education', value: template.education },
     { name: 'project', value: template.project },
     { name: 'language', value: template.language },
-    { name: 'social', value: '' },
+    { name: 'social', value: template.social },
     { name: 'help', value: '' },
     { name: '-h', value: '' },
     { name: 'contact', value: '' },
