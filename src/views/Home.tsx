@@ -23,8 +23,7 @@ const Home = () => {
     <>
       <Terminal
         initialData={template.banner}
-        commands={commands}
-      />
+        commands={commands}/>
       <VersionSticker />
       <Npm />
       <GitHub />
