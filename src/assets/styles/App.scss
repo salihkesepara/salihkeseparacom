@@ -63,7 +63,7 @@ body {
 }
 
 #version-sticker {
-  position: absolute;
+  position: fixed;
   top: 48px;
   right: -47px;
   width: 220px;
@@ -99,7 +99,7 @@ body {
 }
 
 #github {
-  position: absolute;
+  position: fixed;
   right: 16px;
   bottom: 16px;
   display: flex;
