@@ -48,7 +48,7 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "sass": "^1.55.0",
-    "terminal-io": "^1.0.2",
+    "terminal-io": "^1.0.3",
     "typescript": "*",
     "web-vitals": "^2.1.4"
   },
