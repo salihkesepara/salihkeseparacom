@@ -1,4 +1,4 @@
-import Terminal from 'src/components/Terminal'
+import Terminal from 'terminal-io'
 import template from 'src/template'
 import VersionSticker from 'src/components/VersionSticker'
 import GitHub from 'src/components/GitHub'
@@ -24,7 +24,6 @@ const Home = () => {
       <Terminal
         initialData={template.banner}
         commands={commands}
-        className="custom-terminal"
       />
       <VersionSticker />
       <Npm />

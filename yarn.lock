@@ -8475,6 +8475,11 @@ tempy@^0.6.0:
     type-fest "^0.16.0"
     unique-string "^2.0.0"
 
+terminal-io@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/terminal-io/-/terminal-io-1.0.2.tgz#15300848ecc550c9b0cd99c2f322859094075c00"
+  integrity sha512-X2wDR1mm9wWwhDHfB3YpvjyqYR1OGoz4NvII518yniHT2iGp9l+dy37jFNE6Pa/FXdcGOdi26vvEchvUY9LRzw==
+
 terminal-link@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/terminal-link/-/terminal-link-2.1.1.tgz#14a64a27ab3c0df933ea546fba55f2d078edc994"

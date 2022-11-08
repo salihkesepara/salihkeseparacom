@@ -2,18 +2,6 @@
 $terminal-background-color: #000;
 $phones: 600px;
 
-body {
-  overflow-x: hidden;
-  min-width: 350px;
-  min-height: 99%;
-  padding: 16px;
-  margin: 0;
-  color: #b89076;
-  font-family: cursor, monospace;
-  background: #211d1b;
-  cursor: text;
-}
-
 .command {
   color: #73abad;
   text-shadow: 0 0 5px #73abad;
