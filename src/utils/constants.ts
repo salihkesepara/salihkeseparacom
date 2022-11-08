@@ -42,7 +42,7 @@ export const experiance: Array<string> = [
   `Etiya                 Front-end Developer      Feb 2014 - Oct 2015 (1 year 9 months)`,
   `Garanti BBVA          Front-end Developer      Dec 2011 - Jan 2014 (2 years 2 months)`,
   `                                               Total: More then 10 years`,
-  `                                                                           <a href="https://www.linkedin.com/in/salihkesepara/details/experience/" target="_blank">See all...</a>`
+  `                                                                           <a href="https://www.linkedin.com/in/salihkesepara/details/experience/" target="_blank">more details...</a>`
 ]
 
 export const education: Array<string> = [
@@ -65,7 +65,7 @@ export const project: Array<string> = [
   `Warning Screens                Garanti BBVA               Jan 2013`,
   `Sales TrackingSales            Garanti BBVA               Feb 2013`,
   `FCR(First Call Resolution)     Garanti BBVA               Jun 2012`,
-  `                                                                                   <a href="https://www.linkedin.com/in/salihkesepara/details/projects/" target="_blank">See all...</a>`
+  `                                                                                   <a href="https://www.linkedin.com/in/salihkesepara/details/projects/" target="_blank">more details...</a>`
 ]
 
 export const language: Array<string> = [

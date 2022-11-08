@@ -1,5 +1,5 @@
 const contact = (key: string) => {
-  const column = ['column-200', 'column-300']
+  const column: string[] = ['column-200', 'column-300']
 
   return (
     <div key={key}>
