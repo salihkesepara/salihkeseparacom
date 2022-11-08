@@ -8,7 +8,7 @@ const Home = () => {
     { name: 'experiance', value: template.experiance },
     { name: 'education', value: template.education },
     { name: 'project', value: template.project },
-    { name: 'language', value: '' },
+    { name: 'language', value: template.language },
     { name: 'social', value: '' },
     { name: 'help', value: '' },
     { name: '-h', value: '' },

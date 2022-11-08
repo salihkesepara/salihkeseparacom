@@ -4,6 +4,7 @@ import summary from 'src/template/summary'
 import experiance from 'src/template/experiance'
 import education from 'src/template/education'
 import project from 'src/template/project'
+import language from 'src/template/language'
 
 export default {
   banner,
@@ -11,5 +12,6 @@ export default {
   summary,
   experiance,
   education,
-  project
+  project,
+  language
 }
