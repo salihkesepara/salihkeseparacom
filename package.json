@@ -1,6 +1,7 @@
 {
   "name": "salihkeseparacom",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "A personal website",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
@@ -29,24 +30,18 @@
     ]
   },
   "main": "index.js",
-  "repository": "git@github.com:salihkesepara/salihkeseparacom.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salihkesepara/salihkeseparacom"
+  },
   "author": "Salih Kesepara <salihkesepara@gmail.com>",
+  "homepage": "https://salihkesepara.com",
+  "keywords": [
+    "salih kesepara",
+    "terminal"
+  ],
+  "license": "MIT",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/jquery": "^3.5.14",
-    "@types/lodash": "^4.14.188",
-    "@types/node": "^16.18.3",
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "dotenv": "^16.0.3",
-    "history": "^5.3.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.3",
-    "react-scripts": "5.0.1",
     "sass": "^1.55.0",
     "terminal-io": "^1.0.8",
     "typescript": "*",
@@ -59,6 +54,18 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.31.10"
+    "eslint-plugin-react": "^7.31.10",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.3",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "dotenv": "^16.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1"
   }
 }
