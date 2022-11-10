@@ -13,11 +13,13 @@ const project = (key: string) => {
         <div className={column[1]}></div>
         <div className={column[2]}>Aug 2019</div>
         <div className={column[3]}>
-          <a href="https://github.com/salihkesepara/MessagingApp" target="_blank">GitHub</a>
+          <a href="https://github.com/salihkesepara/MessagingApp"
+            target="_blank">GitHub</a>
         </div>
       </div>
       <div className="row">
-        <div className={column[0]}><a href="https://shaketree.salihkesepara.com" target="_blank">ShakeTree (Demo)</a></div>
+        <div className={column[0]}><a href="https://shaketree.salihkesepara.com"
+          target="_blank">ShakeTree (Demo)</a></div>
         <div className={column[1]}></div>
         <div className={column[2]}>Jan 2019</div>
         <div className={column[3]}><a href="https://github.com/salihkesepara/shaketree"
@@ -59,7 +61,8 @@ const project = (key: string) => {
       </div>
       <div className="row">
         <div className={column[0]}>
-          <a href="https://play.google.com/store/apps/details?id=com.skesepara.get" target="_blank">Get - Breaking News</a>
+          <a href="https://play.google.com/store/apps/details?id=com.skesepara.get"
+            target="_blank">Get - Breaking News</a>
         </div>
         <div className={column[1]}></div>
         <div className={column[2]}>Feb 2019</div>
