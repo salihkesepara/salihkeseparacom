@@ -8451,10 +8451,10 @@ tempy@^0.6.0:
     type-fest "^0.16.0"
     unique-string "^2.0.0"
 
-terminal-io@^1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/terminal-io/-/terminal-io-1.0.13.tgz#b2f900900f0b1d8a2c808876078257dcb5edf324"
-  integrity sha512-HlP+P4U/XFK7V4ZqzzsJJPZlRHos35EXS1DjY2s/5JE9TQXln8v2LZuOcI+Edabw1hPMAn4Pf9fHBpZSmkgukg==
+terminal-io@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/terminal-io/-/terminal-io-1.0.14.tgz#fd717db48ec36b4f69d85d2e9446e72b921bba1e"
+  integrity sha512-q+FzPlwfAcHG0azZjYFHaT0IRihzyhv8ssf5Metdw9c2Y65pFIBrlSA8g3+fv4Ec4/HhNZ71s/ULExRChBg+wg==
 
 terminal-link@^2.0.0:
   version "2.1.1"
