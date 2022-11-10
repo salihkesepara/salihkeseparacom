@@ -1,40 +1,166 @@
+body {
+  padding: 16px;
+  margin: 0;
+  background: #211d1b;
+}
+
 @import url("./index.scss");
+$terminal-background-color: #000;
+$phones: 600px;
 
-.App {
-  text-align: center;
+.command {
+  color: #73abad;
+  text-shadow: 0 0 5px #73abad;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.index {
+  color: #b7b7b7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-color {
+  color: #b89076;
+}
+
+.experiance {
+  min-width: 877px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.column-100 {
+  min-width: 100px;
+}
+.column-200 {
+  min-width: 200px;
+}
+.column-300 {
+  min-width: 300px;
+}
+.column-400 {
+  min-width: 400px;
+}
+.column-500 {
+  min-width: 500px;
+}
+.column-600 {
+  min-width: 600px;
+}
+
+.custom-terminal {
+  .error {
+    color: blue;
   }
 }
 
-.App-header {
+#version-sticker {
+  position: fixed;
+  top: 48px;
+  right: -47px;
+  width: 220px;
+  padding: 2px;
+  color: #b89076;
+  text-align: center;
+  background: #d1d1d1;
+  box-shadow: 3px 5px 7px #000;
+  border: 2px solid;
+  transform: rotate(45deg);
+
+  .container {
+    padding: 5px;
+    font-weight: bold;
+    border: dashed 2px;
+  }
+}
+
+#version-sticker:hover {
+  animation-duration: .2s;
+  animation-name: opacity-animation;
+  cursor: default;
+  opacity: .2;
+}
+
+@keyframes opacity-animation {
+  from {
+    opacity: .8;
+  }
+
+  to {
+    opacity: .2;
+  }
+}
+
+#github,
+#npm {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  color: white;
-  font-size: calc(10px + 2vmin);
-  background-color: #282c34;
-}
+  width: 48px;
+  height: 48px;
+  padding: 13px;
+  text-decoration: none;
+  background: #212121;
+  box-shadow: -3px 3px 7px #030202;
+  border: 1px dashed #938d8d;
+  border-radius: 23px;
+  cursor: pointer;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  img {
+    width: 32px;
+    margin-bottom: 8px;
+    opacity: .8;
   }
+
+  span {
+    color: #b7b7b7;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+#github:hover,
+#npm:hover {
+  background-color: #272727;
+  animation: github-hover-on-animation .2s;
+}
+
+@keyframes github-hover-on-animation {
+  from {
+    background: #212121;
+  }
+
   to {
-    transform: rotate(360deg);
+    background-color: #272727;
+  }
+}
+
+@media only screen and (max-width: $phones) {
+  #github,
+  #version-sticker,
+  #npm {
+    display: none;
+  }
+}
+
+#npm {
+  bottom: 110px;
+  background: #212121;
+
+  .img-box {
+    padding: 7px 7px 4px 7px;
+    margin-bottom: 7px;
+    background-color: #d0cece;
+    border-radius: 26px;
+  }
+
+  img {
+    width: 18px;
+    margin-bottom: 0;
   }
 }
