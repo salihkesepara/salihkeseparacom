@@ -14,12 +14,12 @@ const project = (key: string) => {
         <div className={column[2]}>Aug 2019</div>
         <div className={column[3]}>
           <a href="https://github.com/salihkesepara/MessagingApp"
-            target="_blank">GitHub
-          </a>
+            target="_blank">GitHub</a>
         </div>
       </div>
       <div className="row">
-        <div className={column[0]}>ShakeTree (Demo)</div>
+        <div className={column[0]}><a href="https://shaketree.salihkesepara.com"
+          target="_blank">ShakeTree (Demo)</a></div>
         <div className={column[1]}></div>
         <div className={column[2]}>Jan 2019</div>
         <div className={column[3]}><a href="https://github.com/salihkesepara/shaketree"
