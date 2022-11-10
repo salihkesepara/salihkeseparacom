@@ -13,9 +13,7 @@ const project = (key: string) => {
         <div className={column[1]}></div>
         <div className={column[2]}>Aug 2019</div>
         <div className={column[3]}>
-          <a href="https://github.com/salihkesepara/MessagingApp"
-            target="_blank">GitHub
-          </a>
+          <a href="https://github.com/salihkesepara/MessagingApp" target="_blank">GitHub</a>
         </div>
       </div>
       <div className="row">
