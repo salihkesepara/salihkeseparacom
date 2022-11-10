@@ -7,22 +7,21 @@ module.exports = {
   },
   root: true,
   extends: [
-    'standard-with-typescript'
+    'plugin:react/recommended',
+    'standard'
+  ],
+  overrides: [
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-    },
-    project: './tsconfig.json'
+    sourceType: 'module'
   },
   plugins: [
     'react'
   ],
+  ignorePatterns: ['/build'],
   rules: {
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/space-before-function-paren': ['error', 'never'],
+    'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react/jsx-max-props-per-line': ['error', { maximum: 1 }],
     'react/forbid-component-props': 'off',
