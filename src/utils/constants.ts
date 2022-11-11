@@ -9,7 +9,7 @@ export const help: Array<string> = [
   `<span class="code-color">Options: </span>`,
   `<span class="command">  summary</span>             Get summary about me`,
   `<span class="command">  skill</span>               Get all professional and unprofessional skill`,
-  `<span class="command">  experiance</span>          Get all work experiances`,
+  `<span class="command">  experience</span>          Get all work experiences`,
   `<span class="command">  education</span>           Get all completed educations`,
   `<span class="command">  project</span>             Get all project`,
   `<span class="command">  language</span>            Get all language`,
@@ -20,7 +20,7 @@ export const help: Array<string> = [
 
 export const skill: Array<string> =[
   `
-  Professional Skills: React Library, Redux Library, HTML5, CSS3, Sass, Babel, Webpack, Eslint, Git, Material UI, Javascript, TypeScript, Vue Framework, Vuex, npm, Agile methodologies, Jira, Scram master.<br/><br/>
+  Professional Skills: React Library, Redux Library, HTML5, CSS3, Sass, Babel, Webpack, Eslint, Git, Material UI, Javascript, TypeScript, Vue Framework, Vuex, npm, Agile methodologies, Jira, Scrum master.<br/><br/>
   Unprofessional Skills: Amazon Web Services (AWS), DevOps, Pipelines, MongoDB, Node.js, AngularJS Framework, Ionic Framework, Cordova / Phonegap, jQuery, JAVA, Android Studio.
   `
 ]
@@ -33,7 +33,7 @@ export const summary: Array<string> = [
   `,
 ]
 
-export const experiance: Array<string> = [
+export const experience: Array<string> = [
   `<div class="container"><div class="column-200">Huawei</div><div class="column-300">Team Lead</div><div class="column-400">Jun 2021 - Present  (1 year 6 months +)</div></div>`,
   `<div class="container"><div class="column-200">BilgeAdam</div><div class="column-300">Front-end Developer</div><div class="column-400">Jun 2020 - Jun 2021 (1 year 1 month)</div></div>`,
   `BilgeAdam             Front-end Developer      Jun 2020 - Jun 2021 (1 year 1 month)`,
@@ -88,7 +88,7 @@ export const contact: Array<string> = [
 export const commands: Array<{ name: string, value?: any, run?: Function }> = [
   {name: 'skill', value: skill},
   {name: 'summary', value: summary},
-  {name: 'experiance', value: experiance},
+  {name: 'experience', value: experience},
   {name: 'education', value: education},
   {name: 'project', value: project},
   {name: 'language', value: language},

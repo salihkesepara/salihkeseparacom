@@ -15,8 +15,8 @@ const help = (key: string) => {
         <div className={column[1]}>Get all professional and unprofessional skill</div>
       </div>
       <div className="row">
-        <div className={column[0]}>experiance</div>
-        <div className={column[1]}>Get all work experiances</div>
+        <div className={column[0]}>experience</div>
+        <div className={column[1]}>Get all work experiences</div>
       </div>
       <div className="row">
         <div className={column[0]}>education</div>
