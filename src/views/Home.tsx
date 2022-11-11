@@ -8,7 +8,7 @@ const Home = () => {
   const commands: Array<{ name: string, value?: any }> = [
     { name: 'skill', value: template.skill },
     { name: 'summary', value: template.summary },
-    { name: 'experiance', value: template.experiance },
+    { name: 'experience', value: template.experience },
     { name: 'education', value: template.education },
     { name: 'project', value: template.project },
     { name: 'language', value: template.language },
@@ -23,7 +23,7 @@ const Home = () => {
     <>
       <Terminal
         initialData={template.banner}
-        commands={commands}/>
+        commands={commands} />
       <VersionSticker />
       <Npm />
       <GitHub />

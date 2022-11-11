@@ -1,4 +1,4 @@
-const experiance = (key: string) => {
+const experience = (key: string) => {
   const column: string[] = ['column-200', 'column-300', 'column-400']
 
   return (
@@ -51,4 +51,4 @@ const experiance = (key: string) => {
   )
 }
 
-export default experiance
+export default experience
